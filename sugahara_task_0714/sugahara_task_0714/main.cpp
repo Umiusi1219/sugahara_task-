@@ -142,7 +142,6 @@ void VectorAB(float vecAB_X, float pointAX, float pointAY, float vecAB_Y, float 
 //現在の自分の情報を開示する処理を作ってください。
 
 
-
 struct Card
 {
 public:
@@ -154,7 +153,7 @@ public:
     //各変数のゲッター
     char GetSuit() { return this->suit; }
     int GetCardNum() { return this->cardNum; }
-    char GetcardCheck() { return this->cardCheck; }
+    bool GetcardCheck() { return this->cardCheck; }
 
 private:
     char suit = NULL;   //カードのスートを表す変数
